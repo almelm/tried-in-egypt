@@ -6,13 +6,14 @@ export const List = styled.ul`
   max-width: 600px;
   display: flex;
   flex-direction: column;
+  color: #fff;
 `;
 
 export const ListItem = styled.li`
   display: block;
   padding: 3rem 5rem;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   border-top-width: 0;
   &:first-of-type {
     border-top-width: 1px;
@@ -30,14 +31,15 @@ export const ListItemWithLink = styled.li`
   display: block;
   > a {
     display: block;
-    background-color: #fff;
+    outline: none;
+    background-color: rgba(0,0,0,0.5);
     padding: 3rem 5rem;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-top-width: 0;
     &:hover {
       color: #fff;
-      background-color: #bababa;
-      border-color: #bababa;
+      background-color: rgba(0,0,0,0.1);
+      border-color: none;
       cursor: pointer;
     }
   }

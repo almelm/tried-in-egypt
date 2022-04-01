@@ -9,15 +9,16 @@ export const Input = styled.input`
   border-radius: 0.3rem;
   display: block;
   width: 100%;
-  color: #495057;
-  background-color: #fff;
+  outline: none;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid rgba(0,0,0,0.5);
 `;
 
 export const Button = styled.button`
   color: #fff;
-  background-color: #007bff;
+  background-color: rgba(0,0,0,0.5);
   border-color: #007bff;
   display: inline-block;
   text-align: center;
@@ -26,13 +27,14 @@ export const Button = styled.button`
   padding: 0.5rem 1rem;
   font-size: 2rem;
   line-height: 1.5;
-  height: calc(1.5em + 1rem + 8px);
+  height: calc(1.5em + 1rem + 13px);
   border-radius: 0.25rem;
   user-select: none;
   &:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    border-color:rgba(0,0,0,0.5);
     cursor: pointer;
-    background-color: #0069d9;
-    border-color: #0062cc;
   }
   &:active {
     background-color: #0062cc;
